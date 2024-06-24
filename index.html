@@ -16,7 +16,13 @@
     PROBLEM 1: 
     Create a button that displays an alert message saying "Button clicked!" when the button is clicked. Append the button to the body.
     */
-    //ENTER YOUR CODE HERE
+    const button = document.createElement('button');
+    button.textContent = "Click here";
+
+    button.addEventListener('click', () => alert('Button clicked!'));
+    
+    const h1 = document.querySelector('h1');
+    h1.insertAdjacentElement('afterend', button);
 
     /*
     PROBLEM 2: 
