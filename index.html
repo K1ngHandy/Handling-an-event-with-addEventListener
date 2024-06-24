@@ -56,15 +56,18 @@
     // The code below needs to add the highlight class to the paragraph
     // element above, fix the code below so the webpage works correctly.
     */
-    /*
-    const paragraph = document.getElementById("myParagraph");
-    paragrapha.addEventListener("mouseover", function() {
-      paragraph.add("highlight");
+    // /*
+    // const paragraph = document.getElementById("myParagraph");
+    const paragraph = document.querySelector('p');
+    paragraph.addEventListener("mouseover", function () { // typo in paragraph variable
+      // paragraph.add("highlight");
+      paragraph.classList.add("highlight");
     });
-    paragraph.addEventListener("mouseout", function() {
-      paragraph.classList.delete("highlight");
+    paragraph.addEventListener("mouseout", function () {
+      // paragraph.classList.delete("highlight");
+      paragraph.classList.remove("highlight"); // change to remove
     });
-    */
+    // */
 
   </script>
   <section
