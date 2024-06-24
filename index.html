@@ -44,7 +44,12 @@
     PROBLEM 3:
     Create an image with the source https://picsum.photos/id/237/200/300. When the image is clicked, change its source to the image https://picsum.photos/id/236/200/300 using the addEventListener method.
      */
-     //ENTER YOUR CODE HERE
+    const img = document.createElement('img');
+    img.setAttribute('src', 'https://picsum.photos/id/237/200/300');
+
+    img.addEventListener('click', () => img.src = "https://picsum.photos/id/236/200/300");
+
+    button2.insertAdjacentElement('afterend', img);
 
     /*
     PROBLEM 4 (DEBUGGING): 
